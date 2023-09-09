@@ -1,6 +1,6 @@
 import './Navbar.css';
-import CartWidget from "./CartWidget/CartWidget"
-import ItemListContainer from "../ItemListContainer/ItemListContainer"
+import CartWidget from "../CartWidget/CartWidget"
+
 
 const NavBar = () => {
 
@@ -22,7 +22,7 @@ const NavBar = () => {
             </ul>
 
             <CartWidget />
-            <ItemListContainer greeting={'BIENVENIDOS'} />
+           
 
         </nav>
     )
