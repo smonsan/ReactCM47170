@@ -1,4 +1,4 @@
-const Item =({id, title, price, image,quantity}) => {
+const Item =({id, title, price, image,stock}) => {
 
   return (
     <article className="CardItem">
@@ -15,7 +15,7 @@ const Item =({id, title, price, image,quantity}) => {
                 Precio: ${price}
             </p>
             <p className="Info">
-               Stock Disponible: {quantity} 
+               Stock Disponible: {stock} 
             </p>
         </section>
         <footer className="ItemFooter">
