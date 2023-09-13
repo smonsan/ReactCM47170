@@ -14,24 +14,25 @@ const NavBar = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/"> Home </NavLink>
+                        <NavLink to="/"  type="button" class="btn btn-primary"> Home </NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/categoria/electronics">Electronicos</NavLink>
+                        <NavLink to="/categoria/electronics"  >Electronicos</NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/categoria/jewelry">Joyas</NavLink>
+                        <NavLink to="/categoria/jewelry">Joyas</NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/categoria/men_clothing">Outfit Masculino</NavLink>
+                        <NavLink to="/categoria/men_clothing">Outfit Masculino</NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/categoria/women_clothing"> Outfit Femenino </NavLink>
+                        <NavLink to="/categoria/women_clothing"> Outfit Femenino </NavLink>
                     </li>
                 </ul>
 
                 <CartWidget />
             </nav>
+
         </header>
     )
 }
