@@ -1,18 +1,13 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/Navbar/Navbar';
 import './App.css';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import ItemCount from './Components/ItemCount/ItemCount';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
-import Electronic from './Components/Pages/Electronic';
-import Jewelery from './Components/Pages/Jewelery';
-import MensClothing from './Components/Pages/MensClothing';
-import WomensClothing from './Components/Pages/WomensClothing';
+
 
 
 
 function App() {
-
 
   return (
 
@@ -20,18 +15,13 @@ function App() {
       <div className="App">
 
         <NavBar />
-        <ItemListContainer greeting={'Bienvenidos'} />
-        {/* <ItemCount initial={1} stock={10}  onAdd={(quantity) => console.log ('cantidad agregada', quantity)}/> */}
-        <ItemDetailContainer />
+
         <Routes>
-          <Route path='Electronics' element={<Electronic />} />
-          <Route path='Jewelery' element={<Jewelery />} />
-          <Route path='MensClothing' element={<MensClothing />} />
-          <Route path='WomensClothing' element={<WomensClothing />} />
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
+          <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+          <Route path='*' element={<h2> Error 404 </h2>} />
         </Routes>
-
-
-
 
       </div>
     // </BrowserRouter>

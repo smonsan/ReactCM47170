@@ -17,16 +17,16 @@ const NavBar = () => {
                         <NavLink to="/"> Home </NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/Electronic">Electronic</NavLink>
+                        <NavLink to= "/categoria/electronics">Electronicos</NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/Jewelery">Jewelery</NavLink>
+                        <NavLink to= "/categoria/jewelry">Joyas</NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/MensClothing">Mens Clothing</NavLink>
+                        <NavLink to= "/categoria/men_clothing">Outfit Masculino</NavLink>
                     </li>
                     <li>
-                        <NavLink to= "/WomensClothing"> WomensClothing </NavLink>
+                        <NavLink to= "/categoria/women_clothing"> Outfit Femenino </NavLink>
                     </li>
                 </ul>
 
