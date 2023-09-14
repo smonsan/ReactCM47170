@@ -7,8 +7,10 @@ const ItemList = ({products}) => {
   return (
     
     
-    <div className="ListGroup">
+    <div className="container text-center w-25 ">
+      <div className=" row">
         {products.map (prod => <Item key={prod.id} {...prod} /> )} </div>
+        </div>
   )
 }
 
