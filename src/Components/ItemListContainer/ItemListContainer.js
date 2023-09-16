@@ -24,10 +24,11 @@ const ItemListContainer = ({ greeting }) => {
 
 
     return (
-        <div className="text-center container">
+        <div className="text-center container flex">
             <h1> {greeting} </h1>
-            <ItemList products={products} />
+                    <ItemList products={products} />
         </div>
+        
     )
 }
 

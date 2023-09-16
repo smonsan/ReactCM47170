@@ -12,17 +12,19 @@ function App() {
   return (
 
     <BrowserRouter>
-      <div className="App">
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <NavBar />
 
-        <NavBar />
-
-        <Routes>
-          <Route path='/' element={<ItemListContainer />} />
-          <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
-          <Route path='/item/:idItem' element={<ItemDetailContainer />} />
-          <Route path='*' element={<h2> Error 404 </h2>} />
-        </Routes>
-
+            <Routes>
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
+              <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+              <Route path='*' element={<h2> Error 404 </h2>} />
+            </Routes>
+          </div>
+        </div>
       </div>
     // </BrowserRouter>
   );

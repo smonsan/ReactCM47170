@@ -7,8 +7,8 @@ const ItemList = ({products}) => {
   return (
     
     
-    <div className="container text-center w-25 ">
-      <div className=" row">
+    <div className="container row ">
+      <div className=" text-center col-3 flex">
         {products.map (prod => <Item key={prod.id} {...prod} /> )} </div>
         </div>
   )
