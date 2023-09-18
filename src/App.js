@@ -3,6 +3,7 @@ import NavBar from './Components/Navbar/Navbar';
 import './App.css';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
+import { CartProvider } from './Components/Context/CartContext';
 
 
 
@@ -12,21 +13,23 @@ function App() {
   return (
 
     <BrowserRouter>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <NavBar />
+      <CartProvider>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <NavBar />
 
-            <Routes>
-              <Route path='/' element={<ItemListContainer />} />
-              <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
-              <Route path='/item/:idItem' element={<ItemDetailContainer />} />
-              <Route path='*' element={<h2> Error 404 </h2>} />
-            </Routes>
+              <Routes>
+                <Route path='/' element={<ItemListContainer />} />
+                <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
+                <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+                <Route path='*' element={<h2> Error 404 </h2>} />
+              </Routes>
+            </div>
           </div>
         </div>
-      </div>
-    // </BrowserRouter>
+      </CartProvider>
+    </BrowserRouter>
   );
 }
 
