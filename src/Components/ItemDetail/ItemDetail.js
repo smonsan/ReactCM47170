@@ -13,11 +13,9 @@ const ItemDetail = ({ id, title, image, description, price, stock }) => {
         
 
 
-        const item = {
-            id, title, price 
-        }
+        const item = {id, title, price };
 
-        addItem (item,quantity)
+        addItem (item, quantity);
     }
 
     return (
@@ -32,7 +30,7 @@ const ItemDetail = ({ id, title, image, description, price, stock }) => {
                 <footer>
                     {
                         quantityAdded > 0 ? (
-                            <Link to="/CartWidget" className="Option" > Terminar Compra  </Link>
+                            <Link to="/Cart" className="Option" > Terminar Compra  </Link>
 
                         ) : (
                             <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />

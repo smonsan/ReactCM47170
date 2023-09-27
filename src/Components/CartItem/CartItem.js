@@ -1,4 +1,4 @@
-import { useState } from "react"
+
 import { useContext } from "react"
 import { CartContext } from "../Context/CartContext"
 
@@ -6,6 +6,12 @@ import { CartContext } from "../Context/CartContext"
 
 const CartItem = ({item, quantity}) => {
     const {removeItem} =useContext(CartContext);
+
+
+//creo una comprobacion porque cart item no esta pudiendo acceder a las propiedades de item
+    if (!item) {
+      return console.error ("no encuentra las propiedades de item");
+    }
 
 
   return (

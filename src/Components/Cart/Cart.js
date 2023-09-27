@@ -8,6 +8,7 @@ import { Link } from "react-router-dom"
 const Cart = () => {
 
   const { cart, clearCart, total, totalQuantity } = useContext(CartContext);
+  console.log (cart);
 
   if (totalQuantity === 0) {
     return (
@@ -21,10 +22,10 @@ const Cart = () => {
 
   return (
     <div>
-      {cart.map(products => <CartItem key={products.id} {...products} />)}
+      {cart.map(p => <CartItem  key={p.id}  item={p} {...p} />)}
       <h3> Total: $ {total}</h3>
       <h3> Cantidad total: {totalQuantity}</h3>
-      <button onClick={() => clearCart()}> Vaciart carrito</button>
+      <button onClick={() => clearCart()}> Vaciar carrito</button>
       <Link to="/checkout"> Finalizar la Compra</Link>
     </div>
   )
