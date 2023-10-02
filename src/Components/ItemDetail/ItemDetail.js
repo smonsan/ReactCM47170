@@ -13,7 +13,7 @@ const ItemDetail = ({ id, title, image, description, price, stock }) => {
         
 
 
-        const item = {id, title, price };
+        const item = {id, title, price, description,image,stock };
 
         addItem (item, quantity);
     }

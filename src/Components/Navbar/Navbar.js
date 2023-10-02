@@ -22,16 +22,16 @@ const NavBar = () => {
                                 <NavLink to="/" type="button" className="btn btn-primary m-3"> Home </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/categoria/electronics" type="button" className="btn btn-primary m-3" >Electronicos</NavLink>
+                                <NavLink to="/category/electronics" type="button" className="btn btn-primary m-3" >Electronicos</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/categoria/jewelry" type="button" className="btn btn-primary m-3">Joyas</NavLink>
+                                <NavLink to="/category/jewelry" type="button" className="btn btn-primary m-3">Joyas</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/categoria/men_clothing" type="button" className="btn btn-primary m-3">Outfit Masculino</NavLink>
+                                <NavLink to="/category/men_clothing" type="button" className="btn btn-primary m-3">Outfit Masculino</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/categoria/women_clothing" type="button" className="btn btn-primary m-3"> Outfit Femenino </NavLink>
+                                <NavLink to="/category/women_clothing" type="button" className="btn btn-primary m-3"> Outfit Femenino </NavLink>
                             </li>
                         </ul>
                     </div>
