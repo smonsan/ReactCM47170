@@ -15,16 +15,15 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
     const decrement = () => {
 
-        if (quantity < stock) {
+        if (quantity >= 1) {
             setQuantity(quantity - 1)
         }
     }
 
-
     return (
         <div className="Counter">
             <div className="Controls">
-                <button className='Boton' onClick={decrement} disabled={quantity <= 0}> - </button>
+                <button className='Boton' onClick={decrement} disabled={quantity <= 1}> - </button>
                 <h4 className="Numero"> {quantity} </h4>
                 <button className='Boton' onClick={increment}> + </button>
             </div>

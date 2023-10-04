@@ -46,7 +46,7 @@ const ItemListContainer = ({ greeting }) => {
  */
 
     return (
-        <div className="text-center container flex">
+        <div className="text-center container row flex">
             <h1> {greeting} </h1>
                     <ItemList products={products} />
         </div>

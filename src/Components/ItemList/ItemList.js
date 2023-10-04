@@ -7,10 +7,11 @@ const ItemList = ({products}) => {
   return (
     
     
-    <div className="container row ">
-      <div className=" text-center col-3 flex">
-        {products.map (prod => <Item key={prod.id} {...prod} /> )} </div>
+    //<div className="container row ">
+      <div>
+        {products.map (prod => <Item key={prod.id} {...prod} /> )} 
         </div>
+        //</div>
   )
 }
 
