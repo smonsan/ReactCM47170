@@ -10,6 +10,7 @@ import Checkout from './Components/Checkout/Checkout';
 
 
 
+
 function App() {
 
   return (
@@ -26,7 +27,7 @@ function App() {
             <Route path='/category/:categoryId' element={<ItemListContainer />} />
             <Route path='/item/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
-            <Route path='/checkout' element={< Checkout/>} />
+            <Route path='/checkout' element={<Checkout />} />
             <Route path='*' element={<h2> Error 404 </h2>} />
           </Routes>
 

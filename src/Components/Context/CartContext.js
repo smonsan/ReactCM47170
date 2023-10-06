@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect} from "react"
+import { createContext, useState, useEffect } from "react"
 import { Storage } from "../../utils/storage";
 
 
@@ -11,7 +11,7 @@ export const CartContext = createContext()
 }) */
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState( () => Storage.get( "cart") || []);
+    const [cart, setCart] = useState(() => Storage.get("cart") || []);
 
     // creo los estados para modificar el estado total de productos y total precio
     const [total, setTotal] = useState(0);
@@ -20,9 +20,9 @@ export const CartProvider = ({ children }) => {
     //de forma provisoria reviso por consola
     console.log(cart)
 
-    useEffect(() => {   
+    useEffect(() => {
         Storage.add('cart', cart)
-      }, [cart])
+    }, [cart])
 
 
     //la funcion para agregar los items al carrito
@@ -79,10 +79,7 @@ export const CartProvider = ({ children }) => {
         <CartContext.Provider value={{ cart, addItem, removeItem, total, totalQuantity, clearCart }}>
             {children}
         </CartContext.Provider>
-
     )
-
-
 }
 
 
