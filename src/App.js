@@ -9,8 +9,6 @@ import Checkout from './Components/Checkout/Checkout';
 
 
 
-
-
 function App() {
 
   return (

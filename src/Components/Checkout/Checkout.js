@@ -2,7 +2,6 @@
 import { addDoc, documentId, collection, getDocs, query, Timestamp, where, writeBatch } from 'firebase/firestore'
 import { useState, useContext } from 'react'
 import { db } from '../../firebaseConfig/config'
-import CheckoutForm from '../CheckoutForm/CheckoutForm'
 import { CartContext } from '../Context/CartContext'
 
 const Checkout = () => {
