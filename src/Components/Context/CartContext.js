@@ -4,11 +4,6 @@ import { Storage } from "../../utils/storage";
 
 export const CartContext = createContext()
 
-/* ({
-    cart: [],
-    total: 0,
-    totalQuantity: 0,
-}) */
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState(() => Storage.get("cart") || []);
@@ -81,76 +76,3 @@ export const CartProvider = ({ children }) => {
         </CartContext.Provider>
     )
 }
-
-
-
-          //pruebo errores en la logica de addItem
-/* const isInCart = (itemId) => {
-    return cart.some(prod => prod.item.id === itemId)
-} */
-
-/*  const isInCart = cart.find (prod => prod.item.id === item.id);
- 
- 
- 
- if (item && item.id && item.price && quantity > 0) {
-
- if (!isInCart) {
-     setCart(prev => [...prev, { ...item, quantity}])
-     setTotalQuantity (prev => prev + quantity);
-     setTotal (prev => prev + (item.price * quantity));
-
- } else {
-     const cartUpdated = cart.map ((prod) => {
-         if (prod.item.id === item.id) {
-             return { ...prod, quantity:prod.quantity + quantity};
-         } else {
-             return prod;
-         }
-     });
-
-     setCart(cartUpdated);
-     setTotal(prev => prev + (item.price * quantity))
-     setTotalQuantity (prev => prev + quantity);
- }
-}else {
- console.error ("el producto no recibe item como propiedad")
-}
-
-} */
-
-
-/* const removeItem = (id) => {
-    const productRemoved = cart.find (prod => prod.item.id === id);
-    const cartUpdated = cart.filter(prod => prod.item.id !== id)
-    setCart(cartUpdated);
-    setTotalQuantity (prev => prev - productRemoved.quantity);
-    setTotal (prev => prev - (productRemoved.item.price*productRemoved.quantity));
-}
-*/
-
-
-/*  const addItem = (item, quantity) => {
-
-     if (!isInCart(item.id)) {
-         setCart(prev => [...prev, { ...item, quantity }])
-     } else {
-         console.error("el producto ya fue agregado")
-     }
- }
-
- const removeItem = (itemId) => {
-     const cartUpdated = cart.filter(prod => prod.id !== itemId)
-     setCart(cartUpdated)
- }
-
- const clearCart = () => {
-     setCart([])
- }
-
- const isInCart = (itemId) => {
-     return cart.some(prod => prod.id === itemId)
- } */
-
-
-

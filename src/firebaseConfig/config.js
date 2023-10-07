@@ -17,4 +17,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 //creamos la constante base de datos para que se inicie con la configuracion de la nube firestore
- export const db = getFirestore(app);
+export const db = getFirestore(app);
