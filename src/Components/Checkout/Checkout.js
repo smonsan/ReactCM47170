@@ -73,7 +73,7 @@ const Checkout = () => {
                             <input type='text' placeholder='Repita su Email' name='email' onChange={((e) => setValidateEmail(e.target.value))} />
                         </div>
                         <div>
-                            <button type='submit' className='btn' disabled={validateEmail !==user.mail}>
+                            <button type='submit' className='btn' disabled={validateEmail !==user.email}>
                                 Crear Orden
                             </button>
                         </div>
