@@ -32,9 +32,10 @@ export const CartProvider = ({ children }) => {
                 setTotalQuantity((prevTotalQuantity) => prevTotalQuantity + quantity);
                 setTotal((prevTotal) => prevTotal + item.price * quantity);
             } else {
-                const cartUpdated = cart.map((prod) => {
+                const cartUpdated = cart.map((prod) => { 
+                
                     if (prod.item && prod.item.id === item.id) {
-                        return { ...prod, quantity: prod.quantity + quantity };
+                        return {...prod, quantity: prod.quantity + quantity};
                     } else {
                         return prod;
                     }
