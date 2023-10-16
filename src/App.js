@@ -15,7 +15,7 @@ function App() {
 
     <BrowserRouter>
       <CartProvider>
-        <div className="container row">
+        <div className="container">
 
 
           <NavBar />
