@@ -1,5 +1,5 @@
 
-import { addDoc, documentId, collection, getDocs, query, Timestamp, where, writeBatch } from 'firebase/firestore'
+import { addDoc, collection, Timestamp } from 'firebase/firestore'
 import { useState, useContext } from 'react'
 import { db } from '../../firebaseConfig/config'
 import { CartContext } from '../Context/CartContext'
