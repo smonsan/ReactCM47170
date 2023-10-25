@@ -1,4 +1,3 @@
-
 import { addDoc, collection, Timestamp } from 'firebase/firestore'
 import { useState, useContext } from 'react'
 import { db } from '../../firebaseConfig/config'
@@ -74,7 +73,7 @@ const Checkout = () => {
                             <input type='text' placeholder='Repita su Email' name='email' onChange={((e) => setValidateEmail(e.target.value))} />
                         </div>
                         <div className='mb-3'>
-                            <button type='submit' className='btn btn-primary' disabled={validateEmail !==user.email}>
+                            <button type='submit' className='btn btn-primary' disabled={validateEmail !== user.email}>
                                 Crear Orden
                             </button>
                         </div>
