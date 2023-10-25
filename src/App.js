@@ -16,22 +16,22 @@ function App() {
     <BrowserRouter>
       <CartProvider>
         <div className="container">
- <div className='row'>
+          <div className='row'>
 
- 
 
-          <NavBar />
 
-          <Routes>
-            <Route path='/' element={<ItemListContainer />} />
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/item/:id' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/checkout' element={<Checkout />} />
-            <Route path='*' element={<h2> Error 404 </h2>} />
-          </Routes>
+            <NavBar />
 
-</div>
+            <Routes>
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/category/:categoryId' element={<ItemListContainer />} />
+              <Route path='/item/:id' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<Cart />} />
+              <Route path='/checkout' element={<Checkout />} />
+              <Route path='*' element={<h2> Error 404 </h2>} />
+            </Routes>
+
+          </div>
         </div>
       </CartProvider>
     </BrowserRouter>
