@@ -47,7 +47,7 @@ const Checkout = () => {
         }
     }
     return (
-        <div>
+        <div className='align-items-center container text-center'>
             {orderId !== ''
                 ? <div>
                     <h2> Felicitaciones su compra fue realizada!</h2>
@@ -55,25 +55,26 @@ const Checkout = () => {
                 </div>
 
                 : <div>
-                    <form onSubmit={finalizarCompra}>
-                        <div>
-                            <label> Name</label>
+                    <form onSubmit={finalizarCompra} className='row g-3'>
+                        <h4 className='mb-4'> Complete sus Datos </h4>
+                        <div className='mb-3'>
+                            {/* <label> Name</label> */}
                             <input type='text' onChange={datosComprador} placeholder='Nombre' name='name' />
                         </div>
-                        <div>
-                            <label> Phone</label>
+                        <div className='mb-3'>
+                            {/* <label> Phone</label> */}
                             <input type='text' onChange={datosComprador} placeholder='Telefono' name='phone' />
                         </div>
-                        <div>
-                            <label> Email </label>
+                        <div className='mb-3'>
+                            {/* <label> Email </label> */}
                             <input type='text' onChange={datosComprador} placeholder='Email' name='email' />
                         </div>
-                        <div>
-                            <label> Email </label>
+                        <div className='mb-3'>
+                            {/* <label> Email </label> */}
                             <input type='text' placeholder='Repita su Email' name='email' onChange={((e) => setValidateEmail(e.target.value))} />
                         </div>
-                        <div>
-                            <button type='submit' className='btn' disabled={validateEmail !==user.email}>
+                        <div className='mb-3'>
+                            <button type='submit' className='btn btn-primary' disabled={validateEmail !==user.email}>
                                 Crear Orden
                             </button>
                         </div>

@@ -6,8 +6,10 @@ const ItemList = ({ products }) => {
 
   return (
 
-    <div>
+    <div className='row'>
+   
       {products.map((p) => <Item key={p.id} {...p} />)}
+  
     </div>
 
   )

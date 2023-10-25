@@ -30,8 +30,8 @@ const ItemListContainer = ({ greeting }) => {
 
 
     return (
-        <div className="text-center container row flex">
-            <h1> {greeting} </h1>
+        <div className="container">
+            {/* <h1> {greeting} </h1> */}
             <ItemList products={products} />
         </div>
 

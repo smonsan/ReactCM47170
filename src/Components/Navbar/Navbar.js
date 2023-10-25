@@ -6,7 +6,7 @@ import CartWidget from "../CartWidget/CartWidget"
 const NavBar = () => {
 
     return (
-        <header>
+        <header className="row">
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">

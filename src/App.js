@@ -16,7 +16,9 @@ function App() {
     <BrowserRouter>
       <CartProvider>
         <div className="container">
+ <div className='row'>
 
+ 
 
           <NavBar />
 
@@ -29,7 +31,7 @@ function App() {
             <Route path='*' element={<h2> Error 404 </h2>} />
           </Routes>
 
-
+</div>
         </div>
       </CartProvider>
     </BrowserRouter>
