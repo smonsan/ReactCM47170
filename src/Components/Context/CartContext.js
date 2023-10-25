@@ -1,12 +1,12 @@
-import { createContext, useState, useEffect } from "react"
-import { Storage } from "../../utils/storage";
+import { createContext, useState, useEffect } from 'react'
+import { Storage } from '../../utils/storage';
 
 
 export const CartContext = createContext()
 
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState(() => Storage.get("cart") || []);
+    const [cart, setCart] = useState(() => Storage.get('cart') || []);
 
     // creo los estados para modificar el estado total de productos y total precio
     const [total, setTotal] = useState(0);

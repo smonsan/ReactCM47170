@@ -15,8 +15,8 @@ function App() {
 
     <BrowserRouter>
       <CartProvider>
-        <div className="container">
-          <div className='row'>
+        <div className="container-fluid">
+          <div className="row">
 
 
 

@@ -1,4 +1,4 @@
-import Item from "../Item/Item"
+import Item from '../Item/Item'
 
 const ItemList = ({ products }) => {
 
@@ -6,7 +6,7 @@ const ItemList = ({ products }) => {
 
   return (
 
-    <div className='row'>
+    <div className="row justify-content-evenly">
    
       {products.map((p) => <Item key={p.id} {...p} />)}
   

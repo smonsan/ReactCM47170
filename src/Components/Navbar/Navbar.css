@@ -1,3 +1,10 @@
 a {text-decoration: none;}
 
 li {list-style-type: none;}
+
+
+.navbar-nav{
+   margin-left: 1rem;
+   margin-right: 1rem;
+    
+}

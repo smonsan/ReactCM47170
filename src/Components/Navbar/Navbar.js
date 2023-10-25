@@ -1,12 +1,12 @@
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css';
-import CartWidget from "../CartWidget/CartWidget"
+import CartWidget from '../CartWidget/CartWidget'
 
 
 const NavBar = () => {
 
     return (
-        <header className="row">
+        <header className="row align-items-center">
 
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
@@ -16,7 +16,7 @@ const NavBar = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className="collapse navbar-collapse justify-content-evenly" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <NavLink to="/" type="button" className="btn btn-primary m-3"> Home </NavLink>

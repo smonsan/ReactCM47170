@@ -1,5 +1,5 @@
-import { getDoc, getDocs, doc, collection, query, where } from "firebase/firestore";
-import { db } from "./config";
+import { getDoc, getDocs, doc, collection, query, where } from 'firebase/firestore';
+import { db } from './config';
 
 
 // aislo estructura de codigo para el caso de querer cambiar la base de datos
@@ -11,8 +11,8 @@ export const getItem = (id) => {
 
 
 export const getItems = (category) => {
-   const items = query(collection(db, "items"),
-      category && where("category", "==", category)
+   const items = query(collection(db, 'items'),
+      category && where('category', '==', category)
    )
    return getDocs(items)
 }

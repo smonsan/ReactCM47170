@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 
 const ItemCount = ({ initial, stock, onAdd }) => {
@@ -23,9 +23,9 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     return (
         <div className="Counter">
             <div className="Controls">
-                <button className='Boton' onClick={decrement} disabled={quantity <= 1}> - </button>
+                <button className="Boton" onClick={decrement} disabled={quantity <= 1}> - </button>
                 <h4 className="Numero"> {quantity} </h4>
-                <button className='Boton' onClick={increment}> + </button>
+                <button className="Boton" onClick={increment}> + </button>
             </div>
 
             <button className="Boton" onClick={() => onAdd(quantity)} disabled={!stock}>
